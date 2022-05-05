@@ -1,16 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import { useDimensions } from './logic/hooks';
-// import Rerender from './Rerender';
+
+const start_img = Math.floor(Math.random() * 5) + 1;
 
 function App() {
-    const dimensions = useDimensions(20);
+    const [face, setFace] = React.useState<number>(start_img);
+    const dimensions = useDimensions(0);
+    const img_path = process.env.PUBLIC_URL + '/img_face/' + face.toString() + '.jpg';
     return (
         <div className="App">
-            <img src={'img_face/1.jpg'} alt="logo" height={dimensions.height} width={dimensions.width}/>
-            {/* <Rerender/> */}
-            {/* {dimensions.height}  {dimensions.width} */}
+            <img
+                src={img_path}
+                alt="mah big face"
+                height={dimensions.height} width={dimensions.width}
+            />
         </div>
     );
 }
