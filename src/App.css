@@ -1,65 +1,17 @@
-/* CSS for my portfolio site */
-
-:root {
-    /* Generated with colors.davidhaas.me */
-    --color-0: #fff9eb; /* Toasted Marshmallow Fluff */
-    --color-1: #9f7e54; /* Fantan */
-    --color-2: #8a695a; /* Suede Leather */
-    --color-3: #6d5b5c; /* Zambezi */
-    --color-4: #564955; /* Deep Mulberry */
-  }
-
-body {
-    background-color: var(--color-0);
-    color: var(--color-4);
-    font-family: Georgia, serif;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
 .App {
-  text-align: left;
+  text-align: center;
 }
 
-a {
-    color: var(--color-4);
-    text-decoration: none;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-a:hover {
-    text-decoration: underline solid var(--color-3) 2px;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
-
-.symbol {
-    color: var(--color-3);
-    /* font-weight: bold; */
-}
-.project-link {
-    transition: all .2s ease-out;
-    margin: 4px 0px 4px;
-    /* margin-bottom: 8px; */
-    /* color: var(--color-3) */
-}
-
-.divider {
-    margin: 0px;
-}
-
-.info-container {
-    padding: 20px 30px;
-    width: fit-content;
-}
-
-.name {
-    font-size: 3em;
-    font-weight: bold;
-    margin: 0
-}
-.subtitle {
-    font-size: 1em;
-    margin: 0;
-}
-
 
 .App-header {
   background-color: #282c34;
@@ -72,3 +24,15 @@ a:hover {
   color: white;
 }
 
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
